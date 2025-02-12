@@ -1,0 +1,9 @@
+.contact-container {
+    background-color: #00bcd4; /* Celeste */
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  

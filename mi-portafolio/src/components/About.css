@@ -1,0 +1,21 @@
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #00bcd4; /* Color celeste */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-text {
+    flex: 1;
+    color: white;
+  }
+  
+  .about-image img {
+    max-width: 250px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
