@@ -32,7 +32,7 @@ const App = () => {
 
       {/* Pie de página o información adicional (si la tienes) */}
       <footer className="footer">
-        <p>&copy; 2025 Mi Portafolio. Todos los derechos reservados.</p>
+        <p>&copy; 2025 Salvador Guerra (Chompi). Todos los derechos reservados.</p>
       </footer>
     </div>
   );
