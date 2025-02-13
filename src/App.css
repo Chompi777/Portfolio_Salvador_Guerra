@@ -1,31 +1,88 @@
-/* App.css */
-
+/* === ESTILO GLOBAL === */
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #f4f4f4; /* Fondo gris claro */
+  background-color: #001f3f; /* Azul oscuro */
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  color: white;
 }
 
-h1, h2, h3 {
-  color: #333;
+/* === ANIMACIÓN DE INTRODUCCIÓN === */
+.intro-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, #00bcd4, #001f3f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  opacity: 1;
+  z-index: 999;
+  animation: fadeOut 2s ease-in-out forwards;
 }
 
-/* Estilo global celeste */
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/* === ANIMACIÓN DE ENTRADA DEL CONTENIDO === */
+main, footer {
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out 1.8s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* === ENCABEZADO === */
+.header {
+  background: linear-gradient(90deg, #00bcd4, #001f3f);
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  border-bottom: 4px solid #00bcd4;
+}
+
+/* === CONTENEDOR PRINCIPAL === */
 main {
-  background-color: #00bcd4; /* Celeste */
+  background: rgba(0, 188, 212, 0.2); /* Fondo con efecto */
   padding: 40px 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  margin: 20px;
 }
 
-footer {
-  background-color: #00bcd4; /* Celeste */
+/* === PIE DE PÁGINA === */
+.footer {
+  background-color: #00bcd4;
   color: white;
   text-align: center;
   padding: 20px;
-}
-
-footer p {
-  margin: 0;
+  font-size: 1rem;
 }

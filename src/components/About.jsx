@@ -9,7 +9,7 @@ const About = () => {
         <p>Descripción del puesto y demás información que desees agregar aquí.</p>
       </div>
       <div className="about-image">
-        <img src="ruta/a/tu/foto.jpg" alt="Tu foto" />
+        <img src="src/assets/Profile.jpeg" alt="Tu foto" />
       </div>
     </div>
   );
